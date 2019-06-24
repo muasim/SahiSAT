@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message TelemetryData
+{
+    int32 id = 1;
+    int32 packet_number = 2;
+    string mission_time = 3;
+    double pressure = 4; 
+    double altitude = 5; 
+    double descent_rate = 6; 
+    int32 temp = 7; 
+    int32 voltage_level = 8; 
+    double gps_latitude = 9; 
+    double gps_longtitude = 10; 
+    double gps_altitude     = 11; 
+    string status = 12; 
+    double pitch = 13; 
+    double roll = 14; 
+    double yaw = 15; 
+    int32 spin_rate = 16; 
+}

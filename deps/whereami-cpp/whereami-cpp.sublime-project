@@ -1,0 +1,50 @@
+{
+	"build_systems":
+	[
+		{
+			"working_dir": "$project_path",
+			"cmd": "make -j8",
+			"name": "Build whereami-cpp"
+		},
+		{
+			"working_dir": "$project_path",
+			"cmd": "make -j8 clean",
+			"name": "Clean whereami-cpp"
+		}
+	],
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"name": "Source",
+			"path": "source"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Headers",
+			"path": "include"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "External",
+			"path": "external"
+		},
+		{
+			"file_include_patterns":
+			[
+				"*Makefile*"
+			],
+			"folder_exclude_patterns":
+			[
+				"*"
+			],
+			"follow_symlinks": true,
+			"name": "Makefiles",
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"tab_size": 2
+	}
+}
